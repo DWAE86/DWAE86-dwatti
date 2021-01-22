@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=devic, initial-scale=1.0">
+	<title>分类</title>
+	<link rel="stylesheet" href="./Semantic-UI/semantic.css">
+	<link rel="stylesheet" href="./static/styles/me.css">
+</head>
+
+<body>
+	<!--navigation-->
+	<nav class="ui attached inverted segment m-padded-tb-mini m-shadow-small">
+		<div class="ui contaner">
+			<div class="ui inverted secondary stackable menu">
+				<h2 class="ui blue large header item">DWAE86 Blog</h2>
+				<a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>主页</a>
+				<a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+				<a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+				<a href="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+				<a href="#" class="m-item item m-mobile-hide active"><i class="info icon"></i>关于我</a>
+				<div class="m-item right item m-mobile-hide">
+					<div class="ui icon input">
+						<input type="text" placeholder="Search...">
+						<i class="search link icon"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="ui menu toggle black icon button m-top-right m-mobile-show">
+			<i class="sidebar icon"></i>
+		</a>
+	</nav>
+
+
+	<!--main content-->
+	<div class="m-container m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="eleven wide column">
+                    <div class="ui segment">
+                        <img src="https://picsum.photos/id/1026/1100/700" alt="" class="ui rounded image">
+                    </div>
+                </div>
+                <div class="five wide column">
+                    <div class="ui top attached segment">
+                        <div class="ui header">关于我</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p>I am csz.</p>
+                        <p>I am coding...</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui teal basic left pointing label m-margin-small">编程</div>
+                        <div class="ui teal basic left pointing label m-margin-small">编程</div>
+                        <div class="ui teal basic left pointing label m-margin-small">编程</div>
+                        <div class="ui teal basic left pointing label m-margin-small">编程</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui blue basic left pointing label m-margin-small">编程</div>
+                        <div class="ui blue basic left pointing label m-margin-small">编程</div>
+                        <div class="ui blue basic left pointing label m-margin-small">编程</div>
+                        <div class="ui blue basic left pointing label m-margin-small">编程</div>
+                        <div class="ui blue basic left pointing label m-margin-small">...</div>
+                    </div>
+                    <div class="ui bottom attached segment">
+                        <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                        <a href="#" class="ui wechat circular icon button"><i class="wechat icon"></i></a>
+                        <a href="#" class="ui qq circular icon button" data-content="QQ:528491005"><i class="qq icon"></i></a>
+                    </div>
+                    <div class="ui wechatQR flowing popup transition hidden">
+                        <img src="./static/images/1.jpg" alt="" class="ui rounded image" style="width: 150px">
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+
+
+	<!--footer-->
+	<footer class="ui inverted vertical segment m-padded-tb-huge">
+		<div class="ui center aligned container">
+			<div class="ui stackable inverted divided grid">
+				<div class="three wide column">
+					<img src="./static/images/1.jpg" class="ui rounded centered image" alt="" style="width: 100px">
+				</div>
+				<div class="three wide column">
+					<h4 class="ui inverted header">Newest Blog</h4>
+					<div class="ui inverted link list">
+						<a href="#" class="item">User Story</a>
+						<a href="#" class="item">User Story</a>
+						<a href="#" class="item">User Story</a>
+					</div>
+				</div>
+				<div class="three wide column">
+					<h4 class="ui inverted header">Contact Me</h4>
+					<div class="ui inverted link list">
+						<a href="#" class="item">User Story</a>
+						<a href="#" class="item">User Story</a>
+						<a href="#" class="item">User Story</a>
+					</div>
+				</div>
+				<div class="seven wide column">
+					<h4 class="ui inverted header">Introduction</h4>
+					<p class="m-text-thin m-text-spaced m-opacity-mini">Hello My Blog!!!</p>
+				</div>
+			</div>
+			<div class="ui inverted section divider"></div>
+			<p class="m-text-thin m-text-spaced m-opacity-small">Copyright ©2021 DWAE86 Designed by DWAE86</p>
+		</div>
+	</footer>
+
+
+
+	<script src=https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js></script>
+	<script src="./Semantic-UI/semantic.js"></script>
+		
+		<script>
+			$('.menu.toggle').click(function() {
+				$('.m-item').toggleClass('m-mobile-hide');
+			});
+
+            $('.qq').popup();
+            $('.wechat').popup({
+                popup: $('.wechatQR')
+            });
+		</script>
+
+</body>
+</html> 
